@@ -1,0 +1,89 @@
+body, html{
+    height: 100%; /*Ocupar todo el espacio de la pag*/
+}
+
+body{
+    margin: 0; /*Eliminar espacio fuera del contenedor*/
+    padding: 0; /*Eliminar espacio dentro del contenedor*/
+    background: url(Img/blue\ colors.jpg); 
+    background-repeat: no-repeat; /*Previene que se repita una img cuando sut amaño es pequeño*/
+    background-size: cover; /* Ajusta la img al tamaño del body*/
+    background-position: center; /* Centrar la img*/
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*Quita por defecto barra de desplazamiento*/
+}
+
+.form-box{
+    width: 330px;
+    padding: 60px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 70px 5px black;
+    background: linear-gradient(to bottom left, #90443b,#d0674a,#ff8737, #fb9f3d);
+    text-align: center;
+    color: #fff;
+}
+
+.form-tittle{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+    border: 0;
+    background-color: #e3f1f1;
+    display: block; /*Se colocan uno encima de otro*/
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #063970;
+    width: 250px;
+    outline: none; /*Elimina un borde exterior*/
+    color: #3d3d59;
+    border-radius: 24px;
+}
+
+::placeholder{
+    font-family: monospace;
+    font-size: 13px;
+    color: #154c79;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    transition: 0.25s;
+    width: 280px;
+    border-color: #1e81b0;
+}
+
+.form-box button[type="submit"]{
+    border: 0;
+    background-color:#3d3d59;
+    width: 150px;
+    color:#fff;
+    cursor: pointer; /*Cambia el estilo del cursor del mouse*/
+    border: 2px solid #3d3d59;
+}
+
+.form-box button[type="submit"]:hover{
+    background-color: #154c79; /*Elimina el fondo del boton cuando el puntero está sobre el*/
+    border: 2px solid #154c79;
+}
+
+.inferior {
+    color: #fff;
+}
+
+.checkbox{
+    background-color: #fff;
+}
