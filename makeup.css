@@ -1,5 +1,5 @@
 body, html{
-    height: 100%; /*Ocupar todo el espacio de la pag*/
+    height: 100vh; /*Unidad que ocupa toda la altura disponible de la pag*/
 }
 
 body{
@@ -12,7 +12,7 @@ body{
 
     /*flexbox*/
     display: flex;
-    flex-direction: row; /bloques en forma de fila**/
+    flex-direction: column; /*bloques en forma de fila*/
     flex-wrap: wrap; /*Si no cabe el contenido, se colocan en diferentes filas*/
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body{
 }
 
 .form-tittle{
-    padding-bottom: 10px;
+    margin-bottom: 35px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -85,13 +85,13 @@ body{
     background-color:#3d3d59;
     width: 150px;
     color:#fff;
-    cursor: pointer; /*Cambia el estilo del cursor del mouse*/
     border: 2px solid #3d3d59;
 }
 
 .form-box button[type="submit"]:hover{
     background-color: #154c79; /*Elimina el fondo del boton cuando el puntero está sobre el*/
     border: 2px solid #154c79;
+    cursor: pointer; /*Cambia el estilo del cursor del mouse*/
 }
 
 .check {
@@ -114,5 +114,5 @@ body{
 .registrarse {
     color: #fff;
     font-size: 14px;
-    display: inline;
+    display: block;
 }
