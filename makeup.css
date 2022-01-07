@@ -12,8 +12,8 @@ body{
 
     /*flexbox*/
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; /bloques en forma de fila**/
+    flex-wrap: wrap; /*Si no cabe el contenido, se colocan en diferentes filas*/
     justify-content: center;
     align-items: center;
     overflow: hidden; /*Quita por defecto barra de desplazamiento*/
@@ -30,6 +30,7 @@ body{
 }
 
 .form-tittle{
+    padding-bottom: 10px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -43,7 +44,6 @@ body{
     border: 0;
     background-color: #e3f1f1;
     display: block; /*Se colocan uno encima de otro*/
-    margin: 20px auto;
     padding: 14px 10px;
     text-align: center;
     border: 2px solid #063970;
@@ -51,6 +51,18 @@ body{
     outline: none; /*Elimina un borde exterior*/
     color: #3d3d59;
     border-radius: 24px;
+}
+
+.form-box input[type="password"]{
+    margin: 20px auto auto auto;
+}
+
+.form-box input[type="text"]{
+    margin: 20px auto;
+}
+
+.form-box button[type="submit"]{
+    margin: 20px auto;
 }
 
 ::placeholder{
@@ -67,6 +79,8 @@ body{
 }
 
 .form-box button[type="submit"]{
+    font-size: 13px;
+    margin-top: 50px;
     border: 0;
     background-color:#3d3d59;
     width: 150px;
@@ -80,10 +94,25 @@ body{
     border: 2px solid #154c79;
 }
 
-.inferior {
-    color: #fff;
+.check {
+    width: 13px;
+    height: 13px;
+    display: inline;
 }
 
-.checkbox{
-    background-color: #fff;
+.check-label{
+    color: #fff;
+    font-size: 13px;
+}
+
+.olvido{
+    color: #fff;font-size: 13px;
+    margin-left: 45px;
+}
+
+.noCuenta,
+.registrarse {
+    color: #fff;
+    font-size: 14px;
+    display: inline;
 }
